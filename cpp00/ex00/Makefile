@@ -6,7 +6,7 @@
 #    By: tanota <tanota@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/23 17:25:06 by tanota            #+#    #+#              #
-#    Updated: 2023/11/23 19:26:57 by tanota           ###   ########.fr        #
+#    Updated: 2023/12/12 17:44:28 by tanota           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,12 +16,9 @@ SRCS					=					megaphone.cpp
 
 CC						=					c++
 
-CFLAGS					=					-Wall -Wextra -Werrror -std=c++98
+CFLAGS					=					-Wall -Wextra -Werror -std=c++98
 
 RM						=					rm -rf
-
-%.o						:					%.cpp
-											$(CC) $(CFLAGS) -c $< -o $@
 
 OBJS					=					$(SRCS:.cpp=.o)
 
@@ -29,6 +26,9 @@ all						:					$(NAME)
 
 $(NAME)					:					$(OBJS)
 											$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
+
+%.o						:					%.cpp
+											$(CC) $(CFLAGS) -c $< -o $@
 
 clean					:
 											$(RM) $(OBJS)
