@@ -6,9 +6,19 @@
 /*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/14 19:47:10 by tanota            #+#    #+#             */
-/*   Updated: 2023/12/14 19:52:49 by tanota           ###   ########.fr       */
+/*   Updated: 2023/12/19 18:57:13 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Contact.hpp"
+
+Contact::Contact (void)
+{
+	return ;
+}
+
+Contact::~Contact (void)
+{
+	return ;
+}
 
