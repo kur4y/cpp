@@ -6,19 +6,19 @@
 /*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/14 19:45:25 by tanota            #+#    #+#             */
-/*   Updated: 2023/12/19 18:57:08 by tanota           ###   ########.fr       */
+/*   Updated: 2024/02/08 16:43:51 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
 
-PhoneBook::PhoneBook ()
+PhoneBook::PhoneBook()
 {
-	return ;
+	return;
 }
 
-PhoneBook::~PhoneBook ()
+PhoneBook::~PhoneBook()
 {
-	return ;
+	return;
 }
 
