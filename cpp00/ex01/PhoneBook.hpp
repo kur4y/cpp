@@ -6,7 +6,7 @@
 /*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/14 19:45:38 by tanota            #+#    #+#             */
-/*   Updated: 2024/02/08 16:37:35 by tanota           ###   ########.fr       */
+/*   Updated: 2024/02/09 18:19:43 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,8 @@
 class PhoneBook
 {
 	private:
-		Contact Book[8];
-		int	countContact;
-		int oldestContact;
+		Contact _book[8];
+		int	_countContact;
 		void printContact(int index) const;
 
 	public:

@@ -6,7 +6,7 @@
 /*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/14 19:47:10 by tanota            #+#    #+#             */
-/*   Updated: 2024/02/08 16:43:35 by tanota           ###   ########.fr       */
+/*   Updated: 2024/02/09 17:33:39 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,25 +49,25 @@ void Contact::setDarkestSecret(const std::string &darkestSecret)
 
 std::string	Contact::getFirstName() const
 {
-	return (this->_firstName);
+	return _firstName;
 }
 
 std::string Contact::getLastName() const
 {
-	return (this->_lastName);
+	return _lastName;
 }
 
 std::string Contact::getNickname() const
 {
-	return (this->_nickname);
+	return _nickname;
 }
 
 std::string Contact::getPhoneNumber() const
 {
-	return (this->_phoneNumber);
+	return _phoneNumber;
 }
 
 std::string Contact::getDarkestSecret() const
 {
-	return (this->_darkestSecret);
+	return _darkestSecret;
 }
