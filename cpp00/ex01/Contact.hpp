@@ -6,7 +6,7 @@
 /*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/14 19:46:32 by tanota            #+#    #+#             */
-/*   Updated: 2024/02/09 15:39:13 by tanota           ###   ########.fr       */
+/*   Updated: 2024/02/10 23:06:04 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ class Contact
 		std::string _darkestSecret;
 		
 	public:
-		Contact ();
-		~Contact ();
+		Contact();
+		~Contact();
 		
 		void setFirstName(const std::string &firstName);
 		void setLastName(const std::string &lastName);

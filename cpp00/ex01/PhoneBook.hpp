@@ -6,7 +6,7 @@
 /*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/14 19:45:38 by tanota            #+#    #+#             */
-/*   Updated: 2024/02/09 18:19:43 by tanota           ###   ########.fr       */
+/*   Updated: 2024/02/10 23:06:16 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ class PhoneBook
 		void printContact(int index) const;
 
 	public:
-		PhoneBook ();
-		~PhoneBook ();
+		PhoneBook();
+		~PhoneBook();
 		void	addContact();
 		void	searchContact() const;
 };
