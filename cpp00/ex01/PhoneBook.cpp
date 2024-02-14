@@ -6,7 +6,7 @@
 /*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/14 19:45:25 by tanota            #+#    #+#             */
-/*   Updated: 2024/02/09 18:17:59 by tanota           ###   ########.fr       */
+/*   Updated: 2024/02/14 17:07:57 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,10 +76,10 @@ void PhoneBook::searchContact() const
 	
 	for (int i = 0; (i < 8); i++)
 	{
-		std::cout << i << "|";
-		std::cout << std::setw(6) << dotLine(_book[i].getFirstName()) << std::setw(6) << "|";
-		std::cout << std::setw(6) << dotLine(_book[i].getLastName()) << std::setw(6) << "|";
-		std::cout << std::setw(6) << dotLine(_book[i].getNickname()) << std::setw(6) << "|" << std::endl;
+		std::cout << std::setw(10) << i << "|";
+		std::cout << std::setw(10) << dotLine(_book[i].getFirstName()) << "|";
+		std::cout << std::setw(10) << dotLine(_book[i].getLastName()) << "|";
+		std::cout << std::setw(10) << dotLine(_book[i].getNickname()) << "|" << std::endl;
 	}
 	
 	int index;
