@@ -6,7 +6,7 @@
 /*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/14 19:45:25 by tanota            #+#    #+#             */
-/*   Updated: 2024/02/14 17:07:57 by tanota           ###   ########.fr       */
+/*   Updated: 2024/02/19 18:47:11 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,7 @@ void PhoneBook::searchContact() const
 	}
 	
 	int index;
-	std::cout << "Enter Contact's index to display:";
+	std::cout << "Enter Contact's index to display: ";
 	
 	if (std::cin >> index && index >= 0 && index < _countContact)
 		printContact(index);
