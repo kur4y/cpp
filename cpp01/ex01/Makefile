@@ -6,16 +6,15 @@
 #    By: tanota <tanota@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/23 17:25:06 by tanota            #+#    #+#              #
-#    Updated: 2024/02/12 17:13:39 by tanota           ###   ########.fr        #
+#    Updated: 2024/02/19 16:34:55 by tanota           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME					=					zombie
+NAME					=					horde
 
 SRCS					=					main.cpp		\
-											newZombie.cpp	\
-											randomChump.cpp	\
-											Zombie.cpp
+											Zombie.cpp		\
+											zombieHorde.cpp
 
 CC						=					c++
 
