@@ -6,7 +6,7 @@
 /*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 18:36:09 by tanota            #+#    #+#             */
-/*   Updated: 2024/02/22 14:29:57 by tanota           ###   ########.fr       */
+/*   Updated: 2024/02/22 15:01:13 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,13 @@ int main()
 	harl.complain("WARNING");
 	std::cout << std::endl;
 
-	std::cout << "--- WARNING ---" << std::endl;
+	std::cout << "--- ERROR ---" << std::endl;
 	harl.complain("ERROR");
 	std::cout << std::endl;
 	
 	harl.complain("ABC");
+	harl.complain("");
+	harl.complain("123");
 
 	return (0);
 }
