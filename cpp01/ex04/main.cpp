@@ -6,7 +6,7 @@
 /*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 18:05:06 by tanota            #+#    #+#             */
-/*   Updated: 2024/02/20 18:33:45 by tanota           ###   ########.fr       */
+/*   Updated: 2024/02/22 14:04:07 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,13 @@ std::string replace_all(const std::string& str, const std::string& s1, const std
 	size_t start = 0;
 	size_t pos;
 
-	while (!(pos = str.find(s1, start)) != std::string::npos)
+	while ((pos = str.find(s1, start)) != std::string::npos)
 	{
 		result.append(str, start, pos - start);
 		result.append(s2);
 		start = pos + s1.length();
 	}
-	
+
 	result.append(str, start, std::string::npos);
 	return result;
 }
