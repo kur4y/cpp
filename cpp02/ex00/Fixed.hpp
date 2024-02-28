@@ -6,7 +6,7 @@
 /*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 18:58:13 by tanota            #+#    #+#             */
-/*   Updated: 2024/02/20 19:05:16 by tanota           ###   ########.fr       */
+/*   Updated: 2024/02/28 16:44:09 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@ class Fixed
 		static const int _fractionalBits = 8;
 
 	public:
-		Fixed();
-		Fixed(const Fixed& other);
-		Fixed& operator=(const Fixed& other);
-		~Fixed();
+		Fixed();								// default constructor
+		Fixed(const Fixed& other);				// copy constructor
+        Fixed& operator=(const Fixed& other);	// copy assignment operator
+		~Fixed();								// destructor
 
 		int getRawBits(void) const;
 		void setRawBits(int const raw);

@@ -6,7 +6,7 @@
 /*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 18:58:17 by tanota            #+#    #+#             */
-/*   Updated: 2024/02/23 15:46:15 by tanota           ###   ########.fr       */
+/*   Updated: 2024/02/28 16:40:07 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,16 +24,36 @@ Fixed::~Fixed()
 
 Fixed::Fixed(const Fixed& other) : _fixedPointValue(other._fixedPointValue)
 {
-	std::cout << "Copy assignement operator called" << std::endl;
-	_fixedPointValue = other.getRawBits();
+    std::cout << "Copy constructor called" << std::endl;
+    *this = other;
+}
+
+Fixed::Fixed(const int intValue) : _fixedPointValue(intValue << _fractionalBits)
+{
+    std::cout << "Int constructor called" << std::endl;
+}
+
+Fixed::Fixed(const float floatValue) : _fixedPointValue(roundf(floatValue * (1 << _fractionalBits)))
+{
+    std::cout << "Float constructor called" << std::endl;
 }
 
 Fixed& Fixed::operator=(const Fixed& other)
 {
 	std::cout << "Copy assignement operator called" << std::endl;
 	if (this != &other)
-		_fixedPointValue = other.getRawBits();
+		_fixedPointValue = other._fixedPointValue;
 	return *this;
+}
+
+float Fixed::toFloat(void) const
+{
+	return static_cast<float>(_fixedPointValue) / (1 << _fractionalBits);
+}
+
+int Fixed::toInt(void) const
+{
+	return _fixedPointValue >> _fractionalBits;
 }
 
 int Fixed::getRawBits(void) const
@@ -45,4 +65,10 @@ int Fixed::getRawBits(void) const
 void Fixed::setRawBits(int const raw)
 {
 	_fixedPointValue = raw;
+}
+
+std::ostream& operator<<(std::ostream& out, const Fixed& fixedPointNumber)
+{
+    out << fixedPointNumber.toFloat();
+    return out;
 }
