@@ -6,7 +6,7 @@
 /*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 18:58:17 by tanota            #+#    #+#             */
-/*   Updated: 2024/02/28 17:05:10 by tanota           ###   ########.fr       */
+/*   Updated: 2024/03/02 15:00:35 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,6 +82,16 @@ bool Fixed::operator>=(const Fixed& other) const
 bool Fixed::operator<=(const Fixed& other) const
 {
 	return (_fixedPointValue <= other._fixedPointValue);
+}
+
+bool Fixed::operator==(const Fixed& other) const
+{
+	return (_fixedPointValue == other._fixedPointValue);
+}
+
+bool Fixed::operator!=(const Fixed& other) const
+{
+	return (_fixedPointValue != other._fixedPointValue);
 }
 
 Fixed Fixed::operator+(const Fixed& other) const
