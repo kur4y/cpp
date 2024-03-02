@@ -6,13 +6,13 @@
 #    By: tanota <tanota@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/23 17:25:06 by tanota            #+#    #+#              #
-#    Updated: 2024/02/28 16:46:14 by tanota           ###   ########.fr        #
+#    Updated: 2024/03/03 00:03:20 by tanota           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME					=					ocf2
+NAME					=					open
 
-SRCS					=					Fixed.cpp	\
+SRCS					=					ClapTrap.cpp	\
 											main.cpp
 
 CC						=					c++
