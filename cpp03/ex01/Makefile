@@ -6,15 +6,15 @@
 #    By: tanota <tanota@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/23 17:25:06 by tanota            #+#    #+#              #
-#    Updated: 2024/03/03 00:09:59 by tanota           ###   ########.fr        #
+#    Updated: 2024/03/04 13:40:10 by tanota           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME					=					serena
+NAME					=					scav
 
 SRCS					=					ClapTrap.cpp	\
-											ScavTrap.cpp	\
-											main.cpp
+											main.cpp		\
+											ScavTrap.cpp
 
 CC						=					c++
 

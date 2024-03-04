@@ -6,7 +6,7 @@
 /*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/02 15:02:13 by tanota            #+#    #+#             */
-/*   Updated: 2024/03/02 15:17:29 by tanota           ###   ########.fr       */
+/*   Updated: 2024/03/04 13:18:43 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,11 @@
 # define CLAPTRAP_HPP
 
 # include <iostream>
+# include <string>
 
 class ClapTrap
 {
-	private:
+	protected:
 		std::string _name;
 		unsigned int _hitPoints;
 		unsigned int _energyPoints;
