@@ -6,7 +6,7 @@
 #    By: tanota <tanota@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/23 17:25:06 by tanota            #+#    #+#              #
-#    Updated: 2024/03/04 15:05:20 by tanota           ###   ########.fr        #
+#    Updated: 2024/03/05 14:00:21 by tanota           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,12 @@ SRCS					=					Animal.cpp		\
 											WrongAnimal.cpp	\
 											WrongCat.cpp
 
+LIB						=					Animal.hpp		\
+											Cat.hpp			\
+											Dog.hpp			\
+											WrongAnimal.hpp	\
+											WrongCat.hpp
+
 CC						=					c++
 
 CFLAGS					=					-Wall -Wextra -Werror -std=c++98
@@ -29,7 +35,7 @@ OBJS					=					$(SRCS:.cpp=.o)
 
 all						:					$(NAME)
 
-$(NAME)					:					$(OBJS)
+$(NAME)					:					$(OBJS) $(LIB)
 											$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
 
 %.o						:					%.cpp
