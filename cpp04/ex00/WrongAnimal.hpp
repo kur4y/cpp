@@ -6,7 +6,7 @@
 /*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 12:42:13 by tanota            #+#    #+#             */
-/*   Updated: 2024/03/05 12:51:54 by tanota           ###   ########.fr       */
+/*   Updated: 2024/03/05 16:38:40 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ class WrongAnimal
 		virtual ~WrongAnimal();
 
 		std::string getType() const;
-		virtual void makeSound() const;
+		void makeSound() const;
 };
 
 #endif
