@@ -6,13 +6,13 @@
 /*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 15:08:50 by tanota            #+#    #+#             */
-/*   Updated: 2024/03/04 15:24:47 by tanota           ###   ########.fr       */
+/*   Updated: 2024/03/05 12:29:15 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
 
-Animal::Animal() : type(type)
+Animal::Animal() : type("")
 {
 	std::cout << "Animal default constructor called." << std::endl;
 }
