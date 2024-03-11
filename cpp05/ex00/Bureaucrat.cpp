@@ -6,7 +6,7 @@
 /*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/08 17:53:01 by tanota            #+#    #+#             */
-/*   Updated: 2024/03/08 18:39:41 by tanota           ###   ########.fr       */
+/*   Updated: 2024/03/11 15:42:54 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,6 +85,6 @@ const char *Bureaucrat::GradeTooLowException::what() const throw()
 
 std::ostream &operator<<(std::ostream &out, const Bureaucrat &crat)
 {
-	out << crat.getName() << ", Bureaucrat grade " << crat.getGrade() << std::endl;
+	out << crat.getName() << ", Bureaucrat grade " << crat.getGrade();
 	return out;
 }

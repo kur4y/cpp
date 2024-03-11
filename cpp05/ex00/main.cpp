@@ -6,7 +6,7 @@
 /*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/08 18:30:16 by tanota            #+#    #+#             */
-/*   Updated: 2024/03/08 18:38:43 by tanota           ###   ########.fr       */
+/*   Updated: 2024/03/11 15:42:21 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int main()
 		jim.decrementGrade();
 		std::cout << jim << std::endl;		// 148 + 1 = 149
 		
-		Bureaucrat pam("pam", 1);
+		Bureaucrat pam("Pam", 1);
 		std::cout << pam << std::endl;		// 1
 		
 		pam.decrementGrade();
