@@ -6,7 +6,7 @@
 /*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 15:25:42 by tanota            #+#    #+#             */
-/*   Updated: 2024/03/14 15:50:50 by tanota           ###   ########.fr       */
+/*   Updated: 2024/05/11 11:30:56 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,14 @@
 
 class ScalarConverter
 {
-	public:
+	private:
 		ScalarConverter();
 		ScalarConverter(const ScalarConverter &);
 		ScalarConverter &operator=(const ScalarConverter &);
-		~ScalarConverter();
 
+	public:
+		~ScalarConverter();
+		
 		static bool isChar(const std::string &str);
 		static bool isInt(const std::string &str);
 		static bool isFloat(const std::string &str);

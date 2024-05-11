@@ -6,7 +6,7 @@
 /*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 15:31:59 by tanota            #+#    #+#             */
-/*   Updated: 2024/03/14 16:04:46 by tanota           ###   ########.fr       */
+/*   Updated: 2024/05/11 11:37:46 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,14 @@
 
 ScalarConverter::ScalarConverter()
 {
-
 }
 
 ScalarConverter::~ScalarConverter()
 {
-
 }
 
 ScalarConverter::ScalarConverter(const ScalarConverter &)
 {
-
 }
 
 ScalarConverter &ScalarConverter::operator=(const ScalarConverter &)
@@ -42,7 +39,7 @@ bool ScalarConverter::isInt(const std::string &str)
 	char *endptr;
 	long nb = std::strtol(str.c_str(), &endptr, 10);
 
-	return (*endptr = '\0' && nb >= -2147483648 && nb <= -2147483647);
+	return (*endptr == '\0' && nb >= -2147483648 && nb <= 2147483647);
 }
 
 bool ScalarConverter::isFloat(const std::string &str)
