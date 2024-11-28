@@ -6,7 +6,7 @@
 /*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/08 17:01:43 by tanota            #+#    #+#             */
-/*   Updated: 2024/05/08 18:31:25 by tanota           ###   ########.fr       */
+/*   Updated: 2024/11/28 22:42:29 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,16 @@ int main(void)
 	++it;
 	--it;
 	
+	std::cout << std::endl;
 	while (it != ite)
 	{
 		std::cout << *it << std::endl;
 		++it;
 	}
 	std::stack<int> s(mstack);
+
+	std::cout << std::endl << "mstack size: " << mstack.size() << std::endl;
+	mstack.displayStack();
 
 	return 0;
 }
