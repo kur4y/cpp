@@ -6,7 +6,7 @@
 /*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/08 18:35:40 by tanota            #+#    #+#             */
-/*   Updated: 2024/05/08 18:44:38 by tanota           ###   ########.fr       */
+/*   Updated: 2025/01/07 22:45:47 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ RPN &RPN::operator=(const RPN&)
 	return *this;
 }
 
-int RPN::evaluate(const std::string &expression)
+int	RPN::evaluate(const std::string &expression)
 {
 	std::stack<int> stk;
 

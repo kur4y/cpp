@@ -6,7 +6,7 @@
 /*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/08 19:11:02 by tanota            #+#    #+#             */
-/*   Updated: 2024/05/08 19:25:36 by tanota           ###   ########.fr       */
+/*   Updated: 2025/01/07 22:49:05 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,10 +40,9 @@ PmergeMe::PmergeMe(int ac, char **av)
 
 	// print after sort values
 	print(false);
-    std::cout << std::fixed << std::setprecision(5) << "Time to process a range of " << _intVec.size() << " elements with std::vector : " << duration << " us.\n";
-    duration = (double)(end - start) / CLOCKS_PER_SEC * 10000;
-    std::cout << std::fixed << std::setprecision(5) << "Time to process a range of " << _intDeq.size() << " elements with std::deque : " << duration << " us.\n";
-
+	std::cout << std::fixed << std::setprecision(5) << "Time to process a range of " << _intVec.size() << " elements with std::vector : " << duration << " us.\n";
+	duration = (double)(end - start) / CLOCKS_PER_SEC * 10000;
+	std::cout << std::fixed << std::setprecision(5) << "Time to process a range of " << _intDeq.size() << " elements with std::deque : " << duration << " us.\n";
 }
 
 PmergeMe::~PmergeMe()
@@ -85,6 +84,7 @@ template<typename T> void PmergeMe::merge(T& arr, T& L, T& R)
 
 	while (j < nL)
 		arr[i++] = L[j++];
+		
 	while (k < nR)
 		arr[i++] = R[k++];
 }
@@ -93,7 +93,7 @@ void PmergeMe::print(bool x)
 {
 	std::cout << (x ? "Before: " : "After: ");
 	int i = 0;
-    for(std::vector<int>::iterator it = _intVec.begin(); it != _intVec.end() && i < 5; ++it, ++i)
+	for(std::vector<int>::iterator it = _intVec.begin(); it != _intVec.end() && i < 5; ++it, ++i)
 		std::cout << *it << ' ';
 	if (_intVec.size() > 5)
 		std::cout << "[...]";
